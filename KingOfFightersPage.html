@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King of Fighters page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Century Gothic", sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color:#fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            height: 50px;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        img {
+            width: auto;
+            Height: 500px;
+            background-size: contain;
+        }
+
+        .return-button {
+            display: inline-block;
+            background-color: #333333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        .return-button:hover {
+            background-color: #333333;
+        }
+
+        article {
+            text-align: center;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #ddd;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 20px;
+            width: 80%;
+            display: flex;
+        }
+        .main-content {
+            flex: 3;
+            background-color: #f2f2f2;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .main-content, .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fighting Games</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="StreetFighterPage.html">Street Fighter</a></li>
+        <li><a href="TekkenPage.html">Tekken</a></li>
+        <li><a href="KingOfFightersPage.html">King Of Fighters</a></li>
+        <li><a href="SoulCalibur.html">SoulCaliber</a></li>
+    </ul>
+</nav>
+
+<section>
+    <article>
+        <h1>King Of Fighters</h1>
+        <p>The King of Fighters (KOF)[a] is a series of fighting games by SNK that began with the release of The King of Fighters '94 in 1994. The series was developed originally for SNK's Neo Geo MVS arcade hardware.</p>
+        <p>The King of Fighters '94 is the first installment of what would later become SNK's longest-running and most successful fighting series.</p>
+    </article>
+</section>
+
+
+<div class="container">
+    <div class="main-content">
+        <h2>Street Fighter Media</h2>
+        <img class="img" src="images/kof94.jpg">
+        <img class="img" src="images/Box_KOF97_ng.jpg">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ohH0pjSkJrM?si=Gi4yN61Q6Krn8uin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p></p>
+    </div>
+
+    <div class="sidebar">
+        <h2>King Of Fighters Links</h2>
+        <ul>
+            <li><a href="#">King Of Fighters Games series</a></li>
+            <li><a href="#">Characters</a></li>
+            <li><a href="#">Stages</a></li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p><a href="MainPage.html" class="return-button">Return Home</a></p>
+</footer>
+
+</body>
+</html>
